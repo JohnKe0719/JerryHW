@@ -4,7 +4,7 @@
 # In[ ]:
 
 
-from source import calculator as c
+from source import calculate as c
 
 while True:
     try:
