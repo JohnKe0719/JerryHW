@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>新增貼文</title>
+    </head>
+    <body>
+        <form action="" method="POST">
+            {% csrf_token %}
+            標題<br>
+            <input type="text" name="title"><br>
+            內容<br>
+            <textarea name="content"></textarea><br>
+            <input type="submit" value="送出">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Blog</title>
+    </head>
+    <body>
+        <h1>部落格喔OwO</h1>
+        <div align ="right"><a href="/blog/post"><button>新增</button></a></div> <hr>
+        {% for post in post_list %}
+            <div align ="right">
+                <a href="/blog/edit?q={{post.id}}"><button>編輯</button></a>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="id" value="{{post.id}}">
+                    <input type="submit" value="刪除">
+                </form>
+            </div>
+            <h2>{{post.title}}</h2>
+            <h4>{{post.content}}</h4>
+            <hr>
+        {% endfor %}
+
+    </body>
+</html>

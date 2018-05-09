@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <h1>母親節快樂！</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="text" name="say">
+            <input type="submit" value="submit">
+        </form>
+        <br>
+        <h4>媽媽，我想對妳說</h4>
+        <h1>{{say}}</h1>
+   
+</head>
