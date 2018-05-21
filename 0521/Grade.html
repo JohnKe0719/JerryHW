@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>成績判斷程式</h2>
+
+<p>
+    <input type="number" name="grade" id="grade">    
+    <button type="button"onclick="judge()">成績判斷</button>
+</p>
+
+<p>判斷結果：</p>
+<p id="demo"></p>
+
+<script>
+
+
+    function judge() {
+	    grade = document.getElementById("grade").value;
+        result="";
+        if(grade>=60){
+            result="非常好:)"
+        }else{
+            result="不及格QQ"
+        }
+        document.getElementById("demo").innerHTML =result;
+    }
+
+
+</script>
+
+</body>
+</html>
