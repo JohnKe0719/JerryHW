@@ -5,63 +5,54 @@
 <h2>Caculator</h2>
 
 <p>
-<button type="button"
-onclick="plus()">
-+</button>
-<button type="button"
-onclick="minus()">
--</button>
-<button type="button"
-onclick="multiply()">
-*</button>
-<button type="button"
-onclick="divide()">
-/</button>
+    <button type="button" onclick="plus()">+</button>
+    <button type="button" onclick="minus()">-</button>
+    <button type="button" onclick="multiply()">*</button>
+    <button type="button" onclick="divide()">/</button>
 </p>
 
-<input type="number" name="a" id="a">
+<input type="number" id="a">
 <br>
-<input type="number" name="b" id="b">
+<input type="number" id="b">
+
 <p>計算結果：</p>
 <p id="demo"></p>
 
 <p>
-<button type="button"
-onclick="c()">
-clear</button>
+    <button type="button" onclick="c()">clear</button>
 </p>
 
 <script>
 
-function plus() {
-	a=Number(document.getElementById("a").value);
-    b=Number(document.getElementById("b").value);
-    document.getElementById("demo").innerHTML = a+b;
-}
+    function plus() {
+	    a=Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+        document.getElementById("demo").innerHTML = a+b;
+    }
 
-function minus() {
-	a=Number(document.getElementById("a").value);
-    b=Number(document.getElementById("b").value);
-    document.getElementById("demo").innerHTML = a-b;
-}
+    function minus() {
+	    a=Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+        document.getElementById("demo").innerHTML = a-b;
+    }
 
-function multiply() {
-	a=Number(document.getElementById("a").value);
-    b=Number(document.getElementById("b").value);
-    document.getElementById("demo").innerHTML = a*b;
-}
+    function multiply() {
+	    a=Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+        document.getElementById("demo").innerHTML = a*b;
+    }
 
-function divide() {
-	a=Number(document.getElementById("a").value);
-    b=Number(document.getElementById("b").value);
-    document.getElementById("demo").innerHTML = a / b;
-}
+    function divide() {
+	    a=Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+        document.getElementById("demo").innerHTML = a / b;
+    }
 
-function c() {
-	document.getElementById("a").value="";
-	document.getElementById("b").value = "";
-    document.getElementById("demo").innerHTML ="";
-}
+    function c() {
+	    document.getElementById("a").value="";
+	    document.getElementById("b").value = "";
+        document.getElementById("demo").innerHTML ="";
+    }
 
 
 </script>
